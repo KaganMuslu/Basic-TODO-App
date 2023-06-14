@@ -3,7 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 import os
 
 app = Flask(__name__)
-os.getenv()
+URI = os.getenv('URI')
 app.config["SQLALCHEMY_DATABASE_URI"] = URI
 
 app.app_context().push()
