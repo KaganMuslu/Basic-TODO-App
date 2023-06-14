@@ -1,10 +1,11 @@
 from flask import Flask, render_template, request, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
+import os
 
 app = Flask(__name__)
+os.getenv()
+app.config["SQLALCHEMY_DATABASE_URI"] = URI
 
-app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///todo.db"
-#postgres://basic_todoapp_base_user:8IunUqpUKDQmFR9mtgTRARiyNzXStx76@dpg-ci4rf1h8g3ne0dn1jdcg-a.frankfurt-postgres.render.com/basic_todoapp_base
 app.app_context().push()
 db = SQLAlchemy(app)
  
@@ -19,7 +20,7 @@ class Todo(db.Model):
 
 @app.route('/')
 def index():
-    todos = Todo.query.all()
+    todos = Todo.query.order_by(Todo.id.asc()).all()
 
     return render_template('index.html', todos = todos)
 
