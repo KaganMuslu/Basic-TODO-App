@@ -1,6 +1,6 @@
 # To-Do Uygulaması
 
-Bu projemde, front-end'de <a href="https://www.w3schools.com/html/html_css.asp">HTML ve CSS</a> kullanarak bir to-do uygulaması geliştirdim. Görevleri düzenlemek ve takip etmek için kullanıcı dostu bir arayüz tasarladım. <a href="https://getbootstrap.com/docs/5.2/getting-started/introduction/">Bootstrap 5</a>  kütüphanesinden yararlanarak uygulamanın modern bir görünüme sahip olmasını sağladım.
+Bu projemde, frontend'de <a href="https://www.w3schools.com/html/html_css.asp">HTML ve CSS</a> kullanarak bir to-do uygulaması geliştirdim. Görevleri düzenlemek ve takip etmek için kullanıcı dostu bir arayüz tasarladım. <a href="https://getbootstrap.com/docs/5.2/getting-started/introduction/">Bootstrap 5</a>  kütüphanesinden yararlanarak uygulamanın modern bir görünüme sahip olmasını sağladım.
 
 Backend tarafında <a href="https://flask.palletsprojects.com">Flask frameworkünü</a> tercih ettim. Flask, veri işleme, form yönetimi ve güçlü bir temel sunarak uygulamaya dinamik özellikler eklememi sağladı. Flask kullanarak kullanıcıların yeni görevler ekleyebileceği, mevcut görevleri düzenleyebileceği ve silebileceği bir API oluşturdum.
 
